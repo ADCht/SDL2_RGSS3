@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0882a10f-5288-4a26-99b1-c10429b106a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gems">
+      <UniqueIdentifier>{715217a4-8528-44ac-beaf-b166f9eae1d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regexp">
+      <UniqueIdentifier>{c7fc9daf-3a35-4233-aff3-5feafd49b9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regexp\enc">
+      <UniqueIdentifier>{c7389004-f434-4dba-a904-1cdbd6517749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regexp\enc\jis">
+      <UniqueIdentifier>{7e7ee594-aee9-488d-8126-4a5fe2f36a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regexp\enc\unicode">
+      <UniqueIdentifier>{93c826c9-0cc6-4374-b97e-96082ec5f8c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\opcode.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\value_array.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\error.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\node.h">
+      <Filter>src\gems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\onigmo.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\onigmognu.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\onigmoposix.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\regenc.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\regint.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\regparse.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\st.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\config.h">
+      <Filter>src\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\enc\iso_8859.h">
+      <Filter>src\regexp\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\enc\shift_jis.h">
+      <Filter>src\regexp\enc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\enc\jis\props.h">
+      <Filter>src\regexp\enc\jis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\enc\unicode\casefold.h">
+      <Filter>src\regexp\enc\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gems\regexp\enc\unicode\name2ctype.h">
+      <Filter>src\regexp\enc\unicode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mruby-vc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\array.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\backtrace.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\class.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\codedump.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\compar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\debug.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dump.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\enum.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\error.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\etc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\fmt_fp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hash.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\init.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\kernel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\load.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\numeric.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\print.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\proc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\range.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\state.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\string.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\symbol.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\variable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\version.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\vm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\mrblib.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_array_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_class_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_compar_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_enum_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_enum_lazy.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_enumerator.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_error.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_eval.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_exit.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_fiber.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_hash_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_io.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_kernel_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_math.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_metaprog.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_method.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_numeric_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_object_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_objectspace.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_pack.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_print.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_proc_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_random.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_range.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_sprintf.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_string_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_struct.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_symbol_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_time.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_toplevel_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\eval.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\exception.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\fiber.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\file.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\file_test.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\hash-ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\io.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\kernel0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\math.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\metaprog.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\method.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\mruby_io_gem.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\mruby_objectspace.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\mruby-exit.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\numeric_ext.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\pack.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\random.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\sprintf.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\string0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\struct.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\time.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\symbol0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\range0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\proc0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\print0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\object0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\kernel1.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\array0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\class0.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\codegen.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\y.tab.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_bignum.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\bignum-gem.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_regexp.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\mruby_onig_regexp.cpp">
+      <Filter>src\gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regcomp.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regenc.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regerror.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regexec.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regext.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\reggnu.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regparse.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regposerr.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regposix.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regsyntax.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regtrav.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regversion.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\st.c">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\ascii.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\big5.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_jp.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_kr.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_tw.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\gb18030.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_1.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_2.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_3.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_4.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_5.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_6.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_7.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_8.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_9.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_10.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_11.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_13.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_14.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_15.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_16.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\koi8_r.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\koi8_u.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\mktable.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\shift_jis.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\unicode.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_8.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_16be.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_16le.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_32be.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_32le.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_31j.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1250.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1251.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1252.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1253.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1254.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1257.c">
+      <Filter>src\regexp\enc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\gems\keywords">
+      <Filter>src\gems</Filter>
+    </None>
+    <None Include="..\src\gems\lex.def">
+      <Filter>src\gems</Filter>
+    </None>
+    <None Include="..\src\gems\regexp\enc\jis\props.kwd">
+      <Filter>src\regexp\enc\jis</Filter>
+    </None>
+  </ItemGroup>
+</Project>

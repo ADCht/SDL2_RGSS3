@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8E31B987-38E2-4085-BF56-99AA4E5B6967}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mrubyvc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MRuby</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libmruby210</TargetName>
+    <OutDir>..\..\mruby-binding\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\include;..\src\;..\src\gems\;..\src\gems\regexp\;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <BuildLog>
+      <Path />
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\error.h" />
+    <ClInclude Include="..\src\gems\node.h" />
+    <ClInclude Include="..\src\gems\regexp\config.h" />
+    <ClInclude Include="..\src\gems\regexp\enc\iso_8859.h" />
+    <ClInclude Include="..\src\gems\regexp\enc\jis\props.h" />
+    <ClInclude Include="..\src\gems\regexp\enc\shift_jis.h" />
+    <ClInclude Include="..\src\gems\regexp\enc\unicode\casefold.h" />
+    <ClInclude Include="..\src\gems\regexp\enc\unicode\name2ctype.h" />
+    <ClInclude Include="..\src\gems\regexp\onigmo.h" />
+    <ClInclude Include="..\src\gems\regexp\onigmognu.h" />
+    <ClInclude Include="..\src\gems\regexp\onigmoposix.h" />
+    <ClInclude Include="..\src\gems\regexp\regenc.h" />
+    <ClInclude Include="..\src\gems\regexp\regint.h" />
+    <ClInclude Include="..\src\gems\regexp\regparse.h" />
+    <ClInclude Include="..\src\gems\regexp\st.h" />
+    <ClInclude Include="..\src\opcode.h" />
+    <ClInclude Include="..\src\value_array.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\array.cpp" />
+    <ClCompile Include="..\src\backtrace.cpp" />
+    <ClCompile Include="..\src\class.cpp" />
+    <ClCompile Include="..\src\codedump.cpp" />
+    <ClCompile Include="..\src\compar.cpp" />
+    <ClCompile Include="..\src\crc.cpp" />
+    <ClCompile Include="..\src\debug.cpp" />
+    <ClCompile Include="..\src\dump.cpp" />
+    <ClCompile Include="..\src\enum.cpp" />
+    <ClCompile Include="..\src\error.cpp" />
+    <ClCompile Include="..\src\etc.cpp" />
+    <ClCompile Include="..\src\fmt_fp.cpp" />
+    <ClCompile Include="..\src\gc.cpp" />
+    <ClCompile Include="..\src\gems\array0.cpp" />
+    <ClCompile Include="..\src\gems\bignum-gem.cpp" />
+    <ClCompile Include="..\src\gems\class0.cpp" />
+    <ClCompile Include="..\src\gems\codegen.cpp" />
+    <ClCompile Include="..\src\gems\eval.cpp" />
+    <ClCompile Include="..\src\gems\exception.cpp" />
+    <ClCompile Include="..\src\gems\fiber.cpp" />
+    <ClCompile Include="..\src\gems\file.cpp" />
+    <ClCompile Include="..\src\gems\file_test.cpp" />
+    <ClCompile Include="..\src\gems\gem_init.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_array_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_bignum.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_class_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_compar_ext.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\gem_init_enumerator.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_enum_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_enum_lazy.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_error.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_eval.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_exit.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_fiber.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_hash_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_io.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_kernel_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_math.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_metaprog.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_method.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_numeric_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_objectspace.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_object_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_pack.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_print.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_proc_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_random.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_range.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_regexp.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_sprintf.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_string_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_struct.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_symbol_ext.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_time.cpp" />
+    <ClCompile Include="..\src\gems\gem_init_toplevel_ext.cpp" />
+    <ClCompile Include="..\src\gems\hash-ext.cpp" />
+    <ClCompile Include="..\src\gems\io.cpp" />
+    <ClCompile Include="..\src\gems\kernel1.cpp" />
+    <ClCompile Include="..\src\gems\kernel0.cpp" />
+    <ClCompile Include="..\src\gems\math.cpp" />
+    <ClCompile Include="..\src\gems\metaprog.cpp" />
+    <ClCompile Include="..\src\gems\method.cpp" />
+    <ClCompile Include="..\src\gems\mrblib.cpp" />
+    <ClCompile Include="..\src\gems\mruby-exit.cpp" />
+    <ClCompile Include="..\src\gems\mruby_io_gem.cpp" />
+    <ClCompile Include="..\src\gems\mruby_objectspace.cpp" />
+    <ClCompile Include="..\src\gems\mruby_onig_regexp.cpp" />
+    <ClCompile Include="..\src\gems\numeric_ext.cpp" />
+    <ClCompile Include="..\src\gems\object0.cpp" />
+    <ClCompile Include="..\src\gems\pack.cpp" />
+    <ClCompile Include="..\src\gems\print0.cpp" />
+    <ClCompile Include="..\src\gems\proc0.cpp" />
+    <ClCompile Include="..\src\gems\random.cpp" />
+    <ClCompile Include="..\src\gems\range0.cpp" />
+    <ClCompile Include="..\src\gems\regexp\enc\ascii.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\big5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_jp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_kr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\euc_tw.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\gb18030.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_1.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_10.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_11.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_13.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_14.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_15.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_16.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_2.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_3.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_6.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_7.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_8.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\iso_8859_9.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\koi8_r.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\koi8_u.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\mktable.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\shift_jis.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\unicode.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_16be.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_16le.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_32be.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_32le.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\utf_8.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1250.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1251.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1252.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1253.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1254.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_1257.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\enc\windows_31j.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\regexp\regcomp.c" />
+    <ClCompile Include="..\src\gems\regexp\regenc.c" />
+    <ClCompile Include="..\src\gems\regexp\regerror.c" />
+    <ClCompile Include="..\src\gems\regexp\regexec.c" />
+    <ClCompile Include="..\src\gems\regexp\regext.c" />
+    <ClCompile Include="..\src\gems\regexp\reggnu.c" />
+    <ClCompile Include="..\src\gems\regexp\regparse.c" />
+    <ClCompile Include="..\src\gems\regexp\regposerr.c" />
+    <ClCompile Include="..\src\gems\regexp\regposix.c" />
+    <ClCompile Include="..\src\gems\regexp\regsyntax.c" />
+    <ClCompile Include="..\src\gems\regexp\regtrav.c" />
+    <ClCompile Include="..\src\gems\regexp\regversion.c" />
+    <ClCompile Include="..\src\gems\regexp\st.c" />
+    <ClCompile Include="..\src\gems\sprintf.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\src\gems\string0.cpp" />
+    <ClCompile Include="..\src\gems\struct.cpp" />
+    <ClCompile Include="..\src\gems\symbol0.cpp" />
+    <ClCompile Include="..\src\gems\time.cpp" />
+    <ClCompile Include="..\src\gems\y.tab.cpp" />
+    <ClCompile Include="..\src\hash.cpp" />
+    <ClCompile Include="..\src\init.cpp" />
+    <ClCompile Include="..\src\kernel.cpp" />
+    <ClCompile Include="..\src\load.cpp" />
+    <ClCompile Include="..\src\numeric.cpp" />
+    <ClCompile Include="..\src\object.cpp" />
+    <ClCompile Include="..\src\pool.cpp" />
+    <ClCompile Include="..\src\print.cpp" />
+    <ClCompile Include="..\src\proc.cpp" />
+    <ClCompile Include="..\src\range.cpp" />
+    <ClCompile Include="..\src\state.cpp" />
+    <ClCompile Include="..\src\string.cpp" />
+    <ClCompile Include="..\src\symbol.cpp" />
+    <ClCompile Include="..\src\variable.cpp" />
+    <ClCompile Include="..\src\version.cpp" />
+    <ClCompile Include="..\src\vm.cpp" />
+    <ClCompile Include="mruby-vc.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\gems\keywords" />
+    <None Include="..\src\gems\lex.def" />
+    <None Include="..\src\gems\regexp\enc\jis\props.kwd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
